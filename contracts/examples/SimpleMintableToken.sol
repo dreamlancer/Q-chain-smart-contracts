@@ -7,7 +7,7 @@ import "../token/ERC20/MintableToken.sol";
 /**
  * @title SimpleMintableToken for QChain Visual Smart Contract Designer
  */
-contract SimpleToken is MintableToken {
+contract SimpleMintableToken is MintableToken {
 
   string public name;
   string public symbol;
