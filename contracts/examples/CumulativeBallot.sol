@@ -2,7 +2,7 @@ pragma solidity ^0.4.23;
 
 import "../math/SafeMath.sol";
 
-contract CummulativeBallot {
+contract CumulativeBallot {
     using SafeMath for uint256;
 
     string public constant title = "Cummulative Voting Ballot";
