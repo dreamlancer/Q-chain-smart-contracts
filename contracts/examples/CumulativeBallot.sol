@@ -5,6 +5,8 @@ import "../math/SafeMath.sol";
 contract CummulativeBallot {
     using SafeMath for uint256;
 
+    string public constant title = "Cummulative Voting Ballot";
+
     uint256 public maxPersonVotes;
 
     struct Voter {
@@ -28,7 +30,7 @@ contract CummulativeBallot {
 
     /// Add max votes for person
     /// May only be called by $(chairperson).
-    function addVotes(address toVoter, uint256 _votes) public {
+    function addVotes(uint256 _votes) public {
         if (msg.sender != chairperson) {
           return;
         }
